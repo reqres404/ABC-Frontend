@@ -12,7 +12,7 @@ const Hero = () =>{
                     <a href="#project">Our Project</a>
                 </div>
                 <div className="row">
-                    <img src={heroImage}/>
+                    <img src={heroImage} alt="heroImage"/>
                 </div>
             </section>
             

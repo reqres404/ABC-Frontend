@@ -10,21 +10,21 @@ const Service=()=>{
                 <h1 className="heading">What We <span>Offer</span></h1>
                 <div className="service-container">
                     <div className="service-card">
-                        <img src={service1}/>
+                        <img src={service1} alt="serviceImage"/>
                         <div className="text-section">
                         <h1><span>Service1</span></h1>
                         <p><strong>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</strong></p>
                         </div>
                     </div>
                     <div className="service-card">
-                        <img src={service2}/>
+                        <img src={service2} alt="serviceImage"/>
                         <div className="text-section">
                         <h1><span>Service2</span></h1>
                         <p><strong>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</strong></p>
                         </div>
                     </div>
                     <div className="service-card">
-                        <img src={service3}/>
+                        <img src={service3} alt="serviceImage"/>
                         <div className="text-section">
                         <h1><span>Service3</span></h1>
                         <p><strong>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</strong></p>
