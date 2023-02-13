@@ -1,5 +1,4 @@
 import aboutImage from '../../assets/about.png'
-import {BrowserRouter,Routes,Route} from 'react-router-dom'
 import "./About.css"
 
 const About = () =>{
