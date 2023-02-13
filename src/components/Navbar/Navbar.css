@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+
+
+.nav-container {
+  /* background-color: #0080FF; */
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+  font-family: 'Poppins', sans-serif;
+  flex-direction: row;  
+}
+
+a{
+  text-decoration: none;
+  color:white
+}
+.navbar {
+  margin-top: 1rem;
+  height: 60px;
+  /* background-color: #0080FF; */
+  position: relative;
+}
+
+.logo {
+  color: white;
+  font-size: 24px;
+  margin-left: -80px;
+}
+
+.menu-icon {
+  display: none;
+}
+
+.nav-elements {
+  
+}
+
+.nav-elements ul {
+  display: flex;
+  justify-content: space-between;
+  list-style-type: none;
+  margin-right: -3rem;
+  
+}
+
+.nav-elements ul li:not(:last-child) {
+  margin-right: 60px;
+
+}
+.nav-CTA{
+  background:linear-gradient(90deg,#345aa4 0%,rgba(98, 22, 212, 0.434)164.26%); ;
+}
+
+.nav-elements ul a {
+  
+  font-size: 16px;
+  font-weight: 400;
+  color: white;
+  padding: 0.5rem;
+  font-weight: 500;
+  /* background:linear-gradient(90deg,#345aa4 0%,rgba(98, 22, 212, 0.434)164.26%); */
+
+  text-decoration: none;
+  transition: 0.45s;
+}
+.nav-elements ul a:hover{
+    /* background-color: #084888; */
+    /* color: #345aa4; */
+    color:rgb(22, 22, 22);
+    font-size: large;
+    border-radius: 10px;
+    
+}
+
+.nav-links{
+  display: flex;
+  flex-direction: row;
+  gap: 2em;
+
+}
+
+
+@media (max-width: 1286px) {
+  .nav-elements ul li:not(:last-child) {
+    margin-right: 30px;
+  }
+  .logo{
+    margin-left: 0;
+  }
+  .nav-elements ul {
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    margin-right: 30px;
+  }
+}
+
+@media (max-width: 750px) {
+  .menu-icon {
+    display: block;
+    cursor: pointer;
+  }
+
+  .nav-elements {
+    position: absolute;
+    z-index: 999;
+    right: 0;
+    top: 60px;
+    background-color: #5878B4;
+    width: 0px;
+    height: calc(100vh - 60px);
+    transition: all 0.3s ease-in;
+    overflow: hidden;
+  }
+
+  .nav-elements.active {
+    width: 270px;
+  }
+
+  .nav-elements ul {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .nav-elements ul li {
+    margin-right: unset;
+    margin-top: 22px;
+  }
+
+  .nav-links{
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+  
+  }
+}
